@@ -20,7 +20,7 @@ module.exports = yeoman.generators.Base.extend({
   writing: {
     app: function () {
       this.fs.copy(
-        this.templatePath('*'),
+        this.templatePath('**/*'),
         this.destinationPath('')
       );
     },
